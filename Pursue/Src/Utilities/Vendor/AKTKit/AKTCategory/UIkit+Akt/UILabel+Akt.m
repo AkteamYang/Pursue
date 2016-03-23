@@ -24,8 +24,6 @@
     dispatch_once(&onceToken, ^{
         // Exchange "setText:" to "aktText:"
         [UILabel swizzleClass:[UILabel class] fromMethod:@selector(setText:) toMethod:@selector(aktText:)];
-//        [UILabel swizzleClass:[UILabel class] fromMethod:@selector(setText:) toMethod:@selector(aktText:)];
-
     });
 }
 #pragma mark - property settings

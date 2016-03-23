@@ -485,8 +485,8 @@
 		F8F6FB8C1C7D39C000D7FF66 /* AKTKit */ = {
 			isa = PBXGroup;
 			children = (
-				F8F6FB8D1C7D39C000D7FF66 /* AKTCategory */,
 				F8F6FB921C7D39C000D7FF66 /* AKTKit.h */,
+				F8F6FB8D1C7D39C000D7FF66 /* AKTCategory */,
 				F8F6FB931C7D39C000D7FF66 /* AKTLayout */,
 				F8F6FB9C1C7D39C000D7FF66 /* AKTPublic.h */,
 				F885A8871C9CACC90057FE2C /* AKTPublic.m */,
@@ -529,7 +529,6 @@
 				F8D0AB511C7AE20B00BEC4E9 /* Sources */,
 				F8D0AB521C7AE20B00BEC4E9 /* Frameworks */,
 				F8D0AB531C7AE20B00BEC4E9 /* Resources */,
-				0890241360582A69847656DC /* Embed Pods Frameworks */,
 				575A2C197E76F6332B0DF2E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -598,21 +597,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0890241360582A69847656DC /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		575A2C197E76F6332B0DF2E0 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
