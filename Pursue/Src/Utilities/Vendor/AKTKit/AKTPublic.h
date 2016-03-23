@@ -66,6 +66,8 @@
 #define mAKT_Color_Purple ([UIColor purpleColor])
 #define mAKT_Color_Brown ([UIColor brownColor])
 #define mAKT_Color_Clear ([UIColor clearColor])
+// Random color
+#define mAKT_Color_Random mAKT_COLOR_Color(arc4random()%255,arc4random()%255,arc4random()%255,.2)
 
 #define mAKT_Color_Text_X (mAKT_COLOR_Color(255,255,255,1))
 #define mAKT_Color_Text_XX (mAKT_COLOR_Color(154,154,154,1))
