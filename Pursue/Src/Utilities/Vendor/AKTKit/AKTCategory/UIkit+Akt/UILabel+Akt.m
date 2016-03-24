@@ -45,7 +45,7 @@
         self.adaptiveHeight = NO;
         CGSize size = [self.text sizeWithAttributes:@{NSFontAttributeName:self.font}];
         // If self.frame.size is equal to size, just return.
-        if (aktValueCompare(self.width, size.width) && aktValueCompare(self.height, size.height)) {
+        if (mAKT_EQ(self.width, size.width) && mAKT_EQ(self.height, size.height)) {
             return;
         }
         self.height = size.height;
@@ -57,7 +57,7 @@
     if (self.adaptiveHeight) {
         CGRect rec = [text boundingRectWithSize:(CGSizeMake(self.width, 9999)) options:(NSStringDrawingUsesLineFragmentOrigin) attributes:@{NSFontAttributeName:self.font} context:nil];
         // If self.height is equal to CGRectGetHeight(rec), just return.
-        if (aktValueCompare(self.height, CGRectGetHeight(rec))) {
+        if (mAKT_EQ(self.height, CGRectGetHeight(rec))) {
             return;
         }
         self.height = CGRectGetHeight(rec);

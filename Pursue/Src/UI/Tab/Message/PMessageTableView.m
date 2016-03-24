@@ -65,8 +65,8 @@ static NSString * const reuseIdentifier = @"cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return _data.count;
-    return 20;
+    return _data.count;
+//    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -80,7 +80,7 @@ static NSString * const reuseIdentifier = @"cell";
     messobj.title = obj.message;
     messobj.time = confromTimespStr;
     PMessageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
-//    [cell setData:messobj];
+    [cell setData:messobj];
     return cell;
 }
 
