@@ -8,10 +8,10 @@
 
 #include "AKTPublic.h"
 /*
- * Safty compare with int float or double.
+ * Safty check whether "a" is equal to "b". Support: int float or double
  */
-bool aktValueCompare(double a, double b) {
-    double delta = ABS((a-b));
+bool aktValueEqual(double a, double b) {
+    double delta = ABS(a-b);
     if (delta>1) {
         return false;
     }else{

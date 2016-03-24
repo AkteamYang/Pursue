@@ -109,7 +109,9 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.1 * NSEC_PER_SEC)), d
 #define mAKT_DegToRad(x) (M_PI * (x) / 180.0)
 #define mAKT_RadToDeg(radian) (radian*180.0)/(M_PI)
 
-// Safty compare with int float or double
-bool aktValueCompare(double a, double b);
+// Safty check whether "a" is equal to "b". Support: int float or double
+bool aktValueEqual(double a, double b);
+#define mAKT_EQ(A, B) __AKT_EQ_IMPL__(A, B)
+#define __AKT_EQ_IMPL__(A, B) (aktValueEqual(A, B))
 //--------------# E.n.d #--------------#>Mathematics related
 #endif
