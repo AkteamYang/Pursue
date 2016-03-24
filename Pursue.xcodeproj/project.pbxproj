@@ -27,6 +27,7 @@
 		F8911CD51C7C1C1700B960E3 /* PLoginAndRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8911CD41C7C1C1700B960E3 /* PLoginAndRegistViewController.m */; };
 		F8911CD91C7C22CF00B960E3 /* PLAAccounView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8911CD81C7C22CF00B960E3 /* PLAAccounView.m */; };
 		F8911CDC1C7C596700B960E3 /* PLARegistBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F8911CDB1C7C596700B960E3 /* PLARegistBtn.m */; };
+		F8B337A31CA4ACEA001FB41E /* AKTOperationDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B337A21CA4ACEA001FB41E /* AKTOperationDispatch.m */; };
 		F8C81E681C7BBD5000578AA7 /* PMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C81E671C7BBD5000578AA7 /* PMessageTableViewCell.m */; };
 		F8C81E6D1C7BBE7A00578AA7 /* PMessageObj.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C81E6C1C7BBE7A00578AA7 /* PMessageObj.m */; };
 		F8C81E741C7BC5E800578AA7 /* P_Avatar1.png in Resources */ = {isa = PBXBuildFile; fileRef = F8C81E6E1C7BC5E800578AA7 /* P_Avatar1.png */; };
@@ -89,6 +90,8 @@
 		F8911CD81C7C22CF00B960E3 /* PLAAccounView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAAccounView.m; sourceTree = "<group>"; };
 		F8911CDA1C7C596700B960E3 /* PLARegistBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLARegistBtn.h; sourceTree = "<group>"; };
 		F8911CDB1C7C596700B960E3 /* PLARegistBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLARegistBtn.m; sourceTree = "<group>"; };
+		F8B337A11CA4ACEA001FB41E /* AKTOperationDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTOperationDispatch.h; sourceTree = "<group>"; };
+		F8B337A21CA4ACEA001FB41E /* AKTOperationDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTOperationDispatch.m; sourceTree = "<group>"; };
 		F8C81E661C7BBD5000578AA7 /* PMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMessageTableViewCell.h; sourceTree = "<group>"; };
 		F8C81E671C7BBD5000578AA7 /* PMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMessageTableViewCell.m; sourceTree = "<group>"; };
 		F8C81E6B1C7BBE7A00578AA7 /* PMessageObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMessageObj.h; sourceTree = "<group>"; };
@@ -251,6 +254,15 @@
 				F8911CDB1C7C596700B960E3 /* PLARegistBtn.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F8B3379E1CA4AB2B001FB41E /* AKTThread */ = {
+			isa = PBXGroup;
+			children = (
+				F8B337A11CA4ACEA001FB41E /* AKTOperationDispatch.h */,
+				F8B337A21CA4ACEA001FB41E /* AKTOperationDispatch.m */,
+			);
+			path = AKTThread;
 			sourceTree = "<group>";
 		};
 		F8D0AB4C1C7AE20B00BEC4E9 = {
@@ -485,9 +497,10 @@
 		F8F6FB8C1C7D39C000D7FF66 /* AKTKit */ = {
 			isa = PBXGroup;
 			children = (
+				F8B3379E1CA4AB2B001FB41E /* AKTThread */,
+				F8F6FB931C7D39C000D7FF66 /* AKTLayout */,
 				F8F6FB921C7D39C000D7FF66 /* AKTKit.h */,
 				F8F6FB8D1C7D39C000D7FF66 /* AKTCategory */,
-				F8F6FB931C7D39C000D7FF66 /* AKTLayout */,
 				F8F6FB9C1C7D39C000D7FF66 /* AKTPublic.h */,
 				F885A8871C9CACC90057FE2C /* AKTPublic.m */,
 			);
@@ -668,6 +681,7 @@
 				F838F8521C7DAF12003FF937 /* PCTableViewCell.m in Sources */,
 				44E8E2F91C7D7C7400820AE1 /* PSendMessageObj.m in Sources */,
 				F8F6FBA11C7D39C000D7FF66 /* AKTLayoutReferenceObj.m in Sources */,
+				F8B337A31CA4ACEA001FB41E /* AKTOperationDispatch.m in Sources */,
 				F8F6FBA21C7D39C000D7FF66 /* UIView+AKTLayout.m in Sources */,
 				F8F6FBA01C7D39C000D7FF66 /* AKTLayoutAttributeItem.m in Sources */,
 				F8D0AB861C7AED4B00BEC4E9 /* PMessageViewController.m in Sources */,
